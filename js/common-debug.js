@@ -68,15 +68,15 @@ jQuery(document).ready(function () {
 // });
 
 // Smooth scroll to anchor
-jQuery('a[href^="#"]').click(function(){
-    var el = jQuery(this).attr('href');
-    if(window.location.hash = "#we-do") { 
-        jQuery('body').animate({
-        scrollTop: jQuery(el).offset().top}, 700);
-    }
+// jQuery('a[href^="#"]').click(function(){
+//     var el = jQuery(this).attr('href');
+//     if(window.location.hash = "#we-do") { 
+//         jQuery('body').animate({
+//         scrollTop: jQuery(el).offset().top}, 700);
+//     }
     
-    return false;
-});
+//     return false;
+// });
 
 
 
@@ -422,10 +422,11 @@ if(jQuery(".what-we-do").length > 0)
     jQuery('.hamburger-open').on(clickEvent, function () {
         var menuOpenState = jQuery('.navigation-wp').css('display');
         if (menuOpenState == 'none') {
+            jQuery('header').css('background', 'white');
             jQuery('.hamburger-open > .fa').addClass('fa-times-thin');
             jQuery('.hamburger-open > .fa').removeClass('fa-bars');
             jQuery('.navigation-wp').slideDown();
-            jQuery('.menu-overlay').slideDown();
+            jQuery('.menu-overlay').show();
         
 
                 jQuery('.menu-overlay').addClass('overlay-active');
@@ -439,12 +440,15 @@ if(jQuery(".what-we-do").length > 0)
                 
             jQuery('body').css('overflow-y', 'initial');
             
+            
 
-            jQuery('.menu-overlay').slideUp();
+            jQuery('.menu-overlay').hide();
             jQuery('.menu-overlay').removeClass('overlay-active');
-    
+            
             jQuery('.hamburger-open > .fa').removeClass('fa-times-thin');
             jQuery('.hamburger-open > .fa').addClass('fa-bars');
+            jQuery('header').css('background', 'rgba(255, 255, 255, 0.8)');
+            
         }
         else {
             jQuery('.navigation').slideDown();

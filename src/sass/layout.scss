@@ -30,10 +30,12 @@
 }
 
 header{
-    background: white;
-    position: relative;
+    background: rgba(255,255,255,.8);
+    position: absolute;
     z-index: 8;
     padding: 10px 0 10px 0;
+    width: 100%;
+    transition: background 0.3s ease;
 
 
     .header-nav{
@@ -116,12 +118,12 @@ header{
 }
 
 .index-top-section{
-    background: url(../img/index-top-bg.png);
+    background: url(../img/index-top-bg.jpg);
     background-repeat: no-repeat;
     text-align: center;
     background-position: bottom;
-    background-size: 100% 118%;
-    padding: 278px 0;
+    background-size: 100% 100%;
+    padding: 17% 0;
     position: relative;
     z-index: 2;
     font-family: 'Montserrat', sans-serif;
@@ -153,7 +155,7 @@ header{
         text-transform: uppercase;
         color: white;
         background: $rose;
-        display: inline-block;
+        display: block;
         font-size: 24px;
         font-weight: 300;
         padding: 13px;
@@ -1635,6 +1637,10 @@ body.team_members-template-default{
         }
     }
 }
+
+.align-text-left{
+    text-align: left;
+}
 @media (max-width: 1199px) and (min-width: 992px){
 
     @keyframes BICYCLE-RIDE {
@@ -1700,7 +1706,7 @@ body.team_members-template-default{
     }
 
     .index-top-section{
-        background-size: 110% 100%;
+        background-size: 120% 100%;
     }
 
     .what-we-do{
@@ -1881,7 +1887,8 @@ body.team_members-template-default{
     }
 
     .index-top-section {
-        background-size: 140% 100%;
+        background-size: 135% 100%;
+        padding: 23% 0;
 
         .welcome-text-subheading {
             font-size: 25px;
@@ -2251,12 +2258,12 @@ body.team_members-template-default{
     }
 
     .index-top-section {
-        background: url(../img/index-top-bg.png);
+        background: url(../img/index-top-bg-sm.jpg);
         background-repeat: no-repeat;
         text-align: center;
         background-position: bottom;
-        background-size: 112% 100%;
-        padding: 22% 0;
+        background-size: 100% 110%;
+        padding: 30% 0;
         position: relative;
         z-index: 2;
         font-family: 'Montserrat', sans-serif;
@@ -2285,7 +2292,7 @@ body.team_members-template-default{
             text-transform: uppercase;
             color: white;
             background: #d75ea8;
-            display: inline-block;
+            display: block;
             font-size: 16px;
             font-weight: 300;
             padding: 13px;
@@ -2965,12 +2972,12 @@ body.team_members-template-default{
             }
         
             .index-top-section {
-                    background: url(../img/index-top-bg.png);
+                    background: url(../img/index-top-bg-sm.jpg);
                     background-repeat: no-repeat;
                     text-align: center;
                     background-position: bottom;
-                    background-size: 112% 100%;
-                    padding: 15% 0;
+                    background-size: 100% 120%;
+                    padding: 25% 0;
                     position: relative;
                     z-index: 2;
                     font-family: 'Montserrat', sans-serif;

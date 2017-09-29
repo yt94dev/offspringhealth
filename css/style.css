@@ -6492,7 +6492,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-
+/*# sourceMappingURL=bootstrap.min.css.map */
 /* Base */
 * {
   margin: 0px;
@@ -7078,10 +7078,12 @@ span.wpcf7-not-valid-tip {
   left: 0px; }
 
 header {
-  background: white;
-  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
   z-index: 8;
-  padding: 10px 0 10px 0; }
+  padding: 10px 0 10px 0;
+  width: 100%;
+  transition: background 0.3s ease; }
   header .header-nav {
     overflow: auto; }
   header .logo {
@@ -7133,12 +7135,12 @@ header {
             color: #d75ea8; }
 
 .index-top-section {
-  background: url(../img/index-top-bg.png);
+  background: url(../img/index-top-bg.jpg);
   background-repeat: no-repeat;
   text-align: center;
   background-position: bottom;
-  background-size: 100% 118%;
-  padding: 278px 0;
+  background-size: 100% 100%;
+  padding: 17% 0;
   position: relative;
   z-index: 2;
   font-family: 'Montserrat', sans-serif; }
@@ -7163,7 +7165,7 @@ header {
     text-transform: uppercase;
     color: white;
     background: #d75ea8;
-    display: inline-block;
+    display: block;
     font-size: 24px;
     font-weight: 300;
     padding: 13px; }
@@ -8266,6 +8268,9 @@ body.team_members-template-default {
   font-size: 16px;
   text-transform: uppercase; }
 
+.align-text-left {
+  text-align: left; }
+
 @media (max-width: 1199px) and (min-width: 992px) {
   @keyframes BICYCLE-RIDE {
     0% {
@@ -8304,7 +8309,7 @@ body.team_members-template-default {
           font-size: 12px;
           text-align: center; }
   .index-top-section {
-    background-size: 110% 100%; }
+    background-size: 120% 100%; }
   .what-we-do {
     background-size: 162% 100%;
     padding: 300px 0 110px 0; }
@@ -8404,7 +8409,8 @@ body.team_members-template-default {
         header .navigation-wp .menu-header-menu-container ul li a {
           font-size: 10px; }
   .index-top-section {
-    background-size: 140% 100%; }
+    background-size: 135% 100%;
+    padding: 23% 0; }
     .index-top-section .welcome-text-subheading {
       font-size: 25px;
       padding-top: 30px;
@@ -8610,12 +8616,12 @@ body.team_members-template-default {
     right: 25px;
     top: 17px; }
   .index-top-section {
-    background: url(../img/index-top-bg.png);
+    background: url(../img/index-top-bg-sm.jpg);
     background-repeat: no-repeat;
     text-align: center;
     background-position: bottom;
-    background-size: 112% 100%;
-    padding: 22% 0;
+    background-size: 100% 110%;
+    padding: 30% 0;
     position: relative;
     z-index: 2;
     font-family: 'Montserrat', sans-serif; }
@@ -8639,7 +8645,7 @@ body.team_members-template-default {
       text-transform: uppercase;
       color: white;
       background: #d75ea8;
-      display: inline-block;
+      display: block;
       font-size: 16px;
       font-weight: 300;
       padding: 13px; }
@@ -9091,12 +9097,12 @@ body.team_members-template-default {
     right: 25px;
     top: 17px; }
   .index-top-section {
-    background: url(../img/index-top-bg.png);
+    background: url(../img/index-top-bg-sm.jpg);
     background-repeat: no-repeat;
     text-align: center;
     background-position: bottom;
-    background-size: 112% 100%;
-    padding: 15% 0;
+    background-size: 100% 120%;
+    padding: 25% 0;
     position: relative;
     z-index: 2;
     font-family: 'Montserrat', sans-serif;

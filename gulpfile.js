@@ -64,8 +64,8 @@ var gulp = require('gulp'),
   });
 
   gulp.task('watch', function() {
-    gulp.watch('src/sass/*.scss', ['js-min', 'sass-compile', 'autoprefixize', 'sass-source-map', 'sass-minify']);
+    gulp.watch('src/sass/*.scss', ['js-min', 'sass-compile', 'autoprefixize', 'sass-source-map']);
     gulp.watch('src/js/*.js', ['js-min']);
   });
 
-  gulps.registerSeries("default", ["js-min", "sass-compile",  "autoprefixize", "sass-source-map", "sass-minify"]);
+  gulps.registerSeries("default", ["js-min", "sass-compile",  "autoprefixize", "sass-source-map", ]);
