@@ -1,0 +1,659 @@
+/* Modules */
+
+// Variables
+$rose: #d75ea8;
+$darkblue: #203970;
+
+
+.welcome-to-title {
+        font-size: 70px;
+        font-family: 'Montserrat', sans-serif;
+        color: #646569;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+
+        b {
+            color: #203970;
+        }
+}
+
+.icon-container {
+    width: 25%;
+    float: left;
+    text-align: center;
+
+    .outer-link{
+        overflow: auto;
+        display: block;
+    }
+
+    figure{
+        img{
+            width: 182px;
+        }
+    }
+    
+    .icon-caption {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        display: inline-block;
+        width: 90%;
+        padding: 30px 0 0px 0;
+        height: 120px;
+    }
+
+    
+}
+.particle-container{
+    position: absolute;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    bottom: -170px;
+    left: -36px;
+}
+
+.particle-container2{
+    position: absolute;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    bottom: -54px;
+    left: -1px;
+}
+.particle-container3{
+    position: absolute;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    top: -6px;
+    right: 144px;
+}
+.particle-container4{
+    position: absolute;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    top: 18px;
+    right: -50px;
+}
+.particle-container5{
+    position: absolute;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    top: 322px;
+    right: 166px;
+}
+.particle-container6{
+    position: absolute;
+    overflow: hidden;
+    height: 400px;
+    width: 400px;
+    top: 236px;
+    left: -113px;
+}
+.particle-container7{
+    position: absolute;
+    overflow: hidden;
+    height: 300px;
+    width: 450px;
+    bottom: -31px;
+    right: 0px;
+    z-index: 6;
+}
+.particle-container8{
+    position: absolute;
+    overflow: hidden;
+    height: 200px;
+    width: 300px;
+    bottom: 70px;
+    right: -5px;
+    z-index: 5;
+}
+#particle1{
+    position: absolute;
+    top: 91px;
+    left: 56px;
+}
+
+#particle2{
+    position: absolute;
+    top: 78px;
+    left: 58px;
+}
+
+#particle3{
+    top: 65px;
+    position: absolute;
+    left: 30px;
+}
+
+#particle4{
+    top: 62.35px;
+    left: 87.36px;
+    position: absolute;
+}
+
+#particle5{
+    top: 27.35px;
+    left: 50.36px;
+    position: absolute;
+}
+
+#particle6{
+    top: 35.35px;
+    left: -4px;
+    position: absolute;
+}
+
+#particle7{
+    top: 72.35px;
+    left: 21px;
+    position: absolute;
+}
+
+#particle8{
+    top: 55.35px;
+    left: 38px;
+    position: absolute;
+}
+
+#particle9{
+    top: 26.35px;
+    left: 37px;
+    position: absolute;
+}
+
+#particle10{
+    top: 80.35px;
+    left: 118px;
+    position: absolute;
+}
+
+#particle11{
+    top: 55.35px;
+    left: 38px;
+    position: absolute;
+}
+
+.particle-container9{
+    position: absolute;
+    overflow: hidden;
+    height: 200px;
+    width: 433px;
+    top: -218px;
+    right: 104px;
+    z-index: 5;
+}
+
+.particle-container10{
+    position: absolute;
+    overflow: hidden;
+    height: 200px;
+    width: 300px;
+    top: -113px;
+    right: 282px;
+    z-index: 5;
+}
+
+.particle-container11{
+    position: absolute;
+    overflow: hidden;
+    height: 200px;
+    width: 300px;
+    top: 95px;
+    left: -138px;
+    z-index: 5;
+}
+
+.particle-container12{
+    position: absolute;
+    overflow: hidden;
+    height: 200px;
+    width: 300px;
+    top: -35px;
+    right: 18px;
+    z-index: 5;
+}
+.particle-container13{
+    position: absolute;
+    overflow: hidden;
+    height: 200px;
+    width: 300px;
+    top: -38px;
+    right: 60px;
+    z-index: 5;
+}
+
+#particle12{
+    top: 55.35px;
+    left: 38px;
+    position: absolute;
+}
+
+#particle13{
+    top: 55.35px;
+    left: 38px;
+    position: absolute;
+}
+
+.offshoot-more-posts{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+	font-weight: bold;
+    text-transform: uppercase;
+    width: 220px;
+	height: 40px;
+	border-radius: 20px;
+    background-color: #fff;
+    display: block;
+    margin: 68px auto;
+    color: #ffcb0c;
+    text-align: center;
+    padding: 9px;
+    border: 2px solid white;
+
+    &:hover{
+        background: none;
+        border: 2px solid white;
+        padding: 9px;
+        color: white;
+        transition: 0.1s ease-in-out 0.1s;
+    }
+}
+
+.req{
+    color: red;
+}
+
+.index-form{
+    overflow: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #929293;
+    font-size: 16px;
+    font-weight: 300;
+
+    
+    label{
+        font-weight: 300;
+        text-transform: uppercase;
+        width: 100%;
+        margin-bottom: 19px;
+
+        .from-label-text{
+            margin-bottom: 9px;
+            display: inline-block;
+        }
+    }
+
+
+
+    .index-form-col{
+        width: 50%;
+        float: left;
+        padding: 41px 18px 0 26px;
+
+        &:last-child{
+            padding: 41px 26px 0 18px;
+        }
+    }
+
+    input{
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #fff;
+        border: 1px solid #dcdcdc;
+        padding: 10px;
+
+        &:focus{
+            outline: none;
+            border: 1px solid #3ac7c9;
+        }
+    }
+
+
+    select{
+        width: 100%;
+        height: 40px;
+        border: 1px solid #dcdcdc;
+        background: white;
+        -webkit-appearance:none;
+        padding: 10px;        
+        
+        &:focus{
+            outline: none;
+            border: 1px solid #3ac7c9;
+        }
+
+        option{
+            color: #929293;
+        }
+
+    }
+
+    input[type=radio]{
+        width: initial;
+        height: initial;
+    }
+
+    textarea{
+        resize: none;
+        width: 100%;
+        border: 1px solid #dcdcdc;
+        border-radius: 20px;
+        padding: 10px;
+        height: 137px;
+
+        &:focus{
+            outline: none;
+            border: 1px solid #3ac7c9;
+        }
+    }
+
+    textarea::-webkit-input-placeholder { /* WebKit browsers */
+        color: #dcdcdc !important;
+        opacity: 1;
+    }
+        
+    textarea::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #dcdcdc !important;
+        opacity: 1;
+    }
+    textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #dcdcdc !important;
+        opacity: 1;
+    }
+    textarea::-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: #dcdcdc !important;
+        opacity: 1;
+    }
+
+    .referral-reason{
+        height: 130px;
+    }
+
+    .child-date{
+        input{
+            width: 29%;
+            margin-right: 6%;
+        }
+
+        .child-birth-year{
+            margin-right: 0%;
+            width: 28%;
+        }
+        
+    }
+
+    
+
+    .date-input{
+        width: 30%;
+        float: left;
+    }
+
+    input::-webkit-input-placeholder { /* WebKit browsers */
+        color: #dcdcdc !important;
+        opacity: 1;
+    }
+        
+    input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #dcdcdc !important;
+        opacity: 1;
+    }
+    input::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #dcdcdc !important;
+        opacity: 1;
+    }
+    input::-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: #dcdcdc !important;
+        opacity: 1;
+    }
+}
+
+select option {
+    background-color: #17619d !important;
+    color: white !important;
+}
+
+span .wpcf7-not-valid {
+    border: 1px solid #ff0000;
+}
+
+span.wpcf7-not-valid-tip {
+    display: none!important;
+}
+
+.index-form-submit{
+    display: block;
+    width: 220px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0 auto;
+    color: white;
+    background: #d75ea8;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 11px;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.border-top-article{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 40px;    
+
+    &:before{
+        position: absolute;
+        content: '';
+        width: 20%;
+        height: 3px;
+        display: block;
+        background-color: #929293;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: -20px auto;
+    }
+}
+
+.particle-container-post-1{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: -20%;
+
+    figure{
+        position: absolute;
+        z-index: -1;
+        left: -2.21px;
+        top: 110.39px;
+    }
+}
+
+.particle-container-post-2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: -12%;
+    top: 3%;
+
+    figure{
+        position: absolute;
+        z-index: -1;
+        left: 61.13px;
+        top: 99.5792px;
+    }
+}
+.particle-container-post-3{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: -14%;
+    top: 23%;
+
+    figure{
+        position: absolute;
+        left: 102.34px;
+        top: 111.762px;
+        z-index: -1;
+    }
+}
+.particle-container-post-4{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: -20%;
+    top: 29%;
+
+    figure{
+        position: absolute;
+        left: 130.93px;
+        top: 123.46px;
+        z-index: -1;
+    }
+}
+.particle-container-post-5{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: -16%;
+    top: 43%;
+
+    figure{
+        position: absolute;
+        z-index: -1;
+        left: 89.62px;
+        top: 71.6439px;
+    }
+}
+.particle-container-post-6{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: -16%;
+    top: 50%;
+
+    figure{
+        position: absolute;
+        z-index: -1;
+        left: 65.03px;
+        top: 107.386px;
+    }
+}
+.particle-container-post-7{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 56%;
+    left: -14%;
+
+    figure{
+        position: absolute;
+        z-index: -1;
+        left: 75.85px;
+        top: 100.8445px;
+    }
+}
+.particle-container-post-8{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 63%;
+    left: -10%;
+
+    figure{
+        position: absolute;
+        z-index: -1;
+        left: 90.33px;
+        top: 133.606px;
+    }
+}
+.particle-container-post-9{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 69%;
+    right: -10%;
+
+    figure{
+        position: absolute;
+        z-index: -1;
+        left: 110.42px;
+        top: 121.545px;
+    }
+}
+
+.particle-container-wedo-post-1{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 6%;
+    left: -10%;;
+
+    figure{
+        position: absolute;
+        z-index: -1;
+        left: 45.42px;
+        top: 92.545px;
+    }
+}
+
+.particle-container-wedo-post-2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    right: -3%;
+
+    figure{
+        position: absolute;
+        z-index: -1;
+        left: 110.42px;
+        top: 121.545px;
+    }
+}
+
+.particle-container-wedo-post-3{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 44%;
+    left: 3%;
+
+    figure{
+        position: absolute;
+        z-index: -1;
+        left: 110.42px;
+        top: 121.545px;
+    }
+}
+
+.particle-container-wedo-post-4{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 3%;
+    right: 3%;
+
+    figure{
+        position: absolute;
+        z-index: -1;
+        left: 100.42px;
+        top: 69.545px;
+    }
+}

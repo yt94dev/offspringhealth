@@ -1,0 +1,29 @@
+/* Base */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+
+a:hover{
+  text-decoration: none;
+}
+
+
+a:focus {
+  outline: none;
+  outline-offset: 0;
+  text-decoration: none;
+}
+
+body{
+  background: #fbfbfb;
+  overflow-x: hidden;
+}
+
+body.single-team_members {
+  overflow-x: hidden;
+}
