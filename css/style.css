@@ -8045,7 +8045,8 @@ body.team_members-template-default {
   display: none; }
 
 .what-we-do-post {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .what-we-do-post .we-do-post-overlay {
     border: none;
     border-radius: 20px;

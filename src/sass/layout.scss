@@ -1358,6 +1358,8 @@ body.team_members-template-default{
 
 .what-we-do-post{
     position: relative;
+    overflow: hidden;
+    
     .we-do-post-overlay{
         border: none;
         border-radius: 20px;
