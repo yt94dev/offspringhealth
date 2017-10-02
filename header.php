@@ -34,7 +34,7 @@
                 <nav class="header-nav">
                     <div class="logo">
                         <a href="<?php echo home_url(); ?>">
-                            <img src="<?php bloginfo('template_url')?>/img/logo.png" alt="">
+                            <img src="<?php bloginfo('template_url')?>/img/logo.svg" alt="Our logo!">
                         </a>
                     </div>
                     <!-- /.logo -->
