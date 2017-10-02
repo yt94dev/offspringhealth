@@ -14,12 +14,12 @@
                 <figure id="particle"><img src="<?php bloginfo('template_url')?>/img/post-particles/p4.png" alt=""></figure>
             </div>
             
-<?php while ( have_posts() ) : the_post(); ?>
+<?php while ( have_posts() ) : the_post(); $acf_fields = get_field('color_boxes_fields_data_group_field');?>
     <div class="container">
         <div class="row">
             <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
                 <div class="we-do-post-overlay">
-                    <figure>
+                    <figure style="background-color:<?php echo trim($acf_fields['color_of_image_outer_block']);?>">
                         <?php the_post_thumbnail('full'); ?> 
                     </figure>
                     <div class="post-text-container">

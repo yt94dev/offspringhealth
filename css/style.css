@@ -8050,24 +8050,32 @@ body.team_members-template-default {
   .what-we-do-post .we-do-post-overlay {
     border: none;
     border-radius: 20px;
-    margin: 80px auto 200px auto;
     background: #ffffff;
-    padding: 115px 100px 145px 100px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
     overflow: auto;
     width: 100%;
-    max-width: 750px; }
+    max-width: 1170px;
+    position: relative;
+    margin-bottom: 200px;
+    margin-top: 80px; }
     .what-we-do-post .we-do-post-overlay figure {
       display: block;
-      width: 32%;
-      float: left; }
-      .what-we-do-post .we-do-post-overlay figure img {
-        width: 100%; }
-    .what-we-do-post .we-do-post-overlay .post-text-container {
-      width: 65%;
+      width: 27%;
       float: left;
-      margin-left: 3%;
-      margin-top: 50px; }
+      height: 100%;
+      position: absolute;
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px; }
+      .what-we-do-post .we-do-post-overlay figure img {
+        width: 70%;
+        margin: 60px auto;
+        display: block; }
+    .what-we-do-post .we-do-post-overlay .post-text-container {
+      width: 67%;
+      float: left;
+      margin-left: 30%;
+      padding-bottom: 40px;
+      margin-top: 120px; }
       .what-we-do-post .we-do-post-overlay .post-text-container .we-do-title {
         color: #203970;
         font-size: 30px;
@@ -8080,7 +8088,7 @@ body.team_members-template-default {
         font-size: 16px;
         color: #414042; }
       .what-we-do-post .we-do-post-overlay .post-text-container .we-do-post-btn {
-        display: inline-block;
+        display: block;
         width: 240px;
         height: 40px;
         border-radius: 20px;
@@ -8089,6 +8097,7 @@ body.team_members-template-default {
         text-transform: uppercase;
         color: white;
         padding: 10px;
+        margin: 0 auto;
         margin-top: 50px; }
 
 .blog-posts-section .blog-posts-title {
@@ -8494,17 +8503,6 @@ body.team_members-template-default {
     transform: rotate(-1deg); } }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .what-we-do-post .we-do-post-overlay figure {
-    display: block;
-    width: 60%;
-    float: none;
-    margin: 0 auto; }
-  .what-we-do-post .we-do-post-overlay .post-text-container {
-    width: 100%;
-    float: none;
-    margin-left: 0;
-    margin-top: 50px;
-    text-align: center; }
   .particle-container-wedo-post-1 {
     display: none; }
   .particle-container-wedo-post-2 {
@@ -8964,19 +8962,6 @@ body.team_members-template-default {
     left: 7%; } }
 
 @media (min-width: 320px) and (max-width: 479px) {
-  .what-we-do-post .we-do-post-overlay {
-    padding: 20px; }
-    .what-we-do-post .we-do-post-overlay figure {
-      display: block;
-      width: 60%;
-      float: none;
-      margin: 0 auto; }
-    .what-we-do-post .we-do-post-overlay .post-text-container {
-      width: 100%;
-      float: none;
-      margin-left: 0;
-      margin-top: 50px;
-      text-align: center; }
   .particle-container-wedo-post-1 {
     display: none; }
   .particle-container-wedo-post-2 {
@@ -9048,6 +9033,37 @@ body.team_members-template-default {
     content: '\00d7';
     font-size: 38px;
     line-height: 30px; }
+  .what-we-do-post .we-do-post-overlay {
+    border: none;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    width: 100%;
+    max-width: 1170px;
+    position: relative;
+    margin-bottom: 200px;
+    margin-top: 80px; }
+    .what-we-do-post .we-do-post-overlay figure {
+      display: block;
+      width: 100%;
+      float: none;
+      height: 100%;
+      position: relative;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 20px; }
+      .what-we-do-post .we-do-post-overlay figure img {
+        width: 70%;
+        margin: 0px auto;
+        display: block;
+        padding: 20px; }
+    .what-we-do-post .we-do-post-overlay .post-text-container {
+      width: 100%;
+      float: none;
+      margin-left: 0;
+      padding-bottom: 40px;
+      margin-top: 0;
+      padding: 30px; }
   header {
     padding: 0px; }
     header .logo {
