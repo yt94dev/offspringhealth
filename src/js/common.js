@@ -427,8 +427,9 @@ if(jQuery(".what-we-do").length > 0)
             switch (ind) {
                 case 0:
                     jQuery('.owl-carousel-home').children('.item').removeClass('invisible-tab hided hidedHeight show-faded-in');
-                    jQuery('.owl-carousel-home').children('.item').eq(0).addClass('show-faded-in');
-                    jQuery('.owl-carousel-home').children('.item').eq(1).addClass('invisible-tab');
+                    jQuery('.owl-carousel-home').children('.item').eq(1).addClass('invisible-tab').hide();
+                    jQuery('.owl-carousel-home').children('.item').eq(0).show().addClass('show-faded-in');
+                    
                     
                     
                     
@@ -438,8 +439,9 @@ if(jQuery(".what-we-do").length > 0)
                 
                 case 1:
                     jQuery('.owl-carousel-home').children('.item').removeClass('invisible-tab hided hidedHeight show-faded-in');
-                    jQuery('.owl-carousel-home').children('.item').eq(1).addClass('show-faded-in');
-                    jQuery('.owl-carousel-home').children('.item').eq(0).addClass('invisible-tab');
+                    jQuery('.owl-carousel-home').children('.item').eq(0).addClass('invisible-tab').hide();
+                    jQuery('.owl-carousel-home').children('.item').eq(1).show().addClass('show-faded-in');
+                    
                     
                     
                     
