@@ -417,8 +417,8 @@ if(jQuery(".what-we-do").length > 0)
     } );
     jQuery('.heard-from-list').prepend('<option selected="selected" disabled="disabled" value="">Please select</option>');
     
-    //
     
+    //Tabs switcher "OUR TEAM" section
     jQuery('.button-tab-team').on(clickEvent, function(){
         if(!jQuery(this).hasClass('button-tab-team-active')){
             jQuery('.button-tab-team').removeClass('button-tab-team-active');

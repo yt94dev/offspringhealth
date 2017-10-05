@@ -153,6 +153,34 @@ function offspr_init() {
 
     register_post_type( 'team_members', $tm_args );
 
+    $tmc_labels = array(
+        'name' => __( 'Team Categories', 'offspringhealth' ),
+        'singular_name' => __( 'Team Category', 'offspringhealth' ),
+        'search_items' => __( 'Search Team Categories', 'offspringhealth' ),
+        'popular_items' => __( 'Popular Team Categories', 'offspringhealth' ),
+        'all_items' => __( 'All Team Categories', 'offspringhealth' ),
+        'add_new_item' => __( 'Add New Team Category', 'offspringhealth' ),
+        'new_item_name' => __( 'New Team Category Name', 'offspringhealth' ),
+        'update_item' => __( 'Update Team Category', 'offspringhealth' ),
+        'edit_item' => __( 'Edit Team Category', 'offspringhealth' ),
+        'view_item' => __( 'View Team Category', 'offspringhealth' ),
+        'separate_items_with_commas' => __( 'Separate team categories with commas', 'offspringhealth' ),
+        'add_or_remove_items' => __( 'Add or remove team categories', 'offspringhealth' ),
+        'choose_from_most_used' => __( 'choose from the most used team categories', 'offspringhealth' )
+    );
+
+    $tmc_args = array(
+        'labels' => $tmc_labels,
+        'public' => false,
+        'show_ui' => true,
+        'show_tagcloud' => false,
+        'hierarchical' => false,
+        'rewrite' => false,
+        'query_var' => false,
+        'show_admin_column' => true
+    );
+    register_taxonomy( 'team_members_cat', array( 'team_members' ), $tmc_args );
+
    
     
         $cb_labels = array(

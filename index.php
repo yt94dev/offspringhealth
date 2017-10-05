@@ -120,7 +120,7 @@ get_header(); ?>
 
                                 <div class="icon-container">
                                 <a href="<? echo get_post_permalink(); ?>#color-box" class="outer-link">
-                                    < figure>
+                                    <figure>
                                         <?php the_post_thumbnail('full'); ?> 
                                     </figure>
                                     <p class="icon-caption"><? the_title(); ?></p>
@@ -174,7 +174,14 @@ get_header(); ?>
                             'posts_per_page' => -1,
                             'post_status' => 'publish',
                             'orderby' => 'menu_order',
-                            'order'=>'ASC'
+                            'order'=>'ASC',
+                            'tax_query' => array(
+                                array(
+                                    'taxonomy' => 'team_members_cat',
+                                    'field'    => 'slug',
+                                    'terms' => 'PRACTITIONERS'
+                                ),
+                            ),
                         );
 
                         
@@ -205,7 +212,47 @@ get_header(); ?>
                             
                     </div>
                     <div class="item hided">
-                        <h2>tab2</h2>
+                    <?php
+                        $args = array(
+                            'post_type' => 'team_members',
+                            'posts_per_page' => -1,
+                            'post_status' => 'publish',
+                            'orderby' => 'menu_order',
+                            'order'=>'ASC',
+                            'tax_query' => array(
+                                array(
+                                    'taxonomy' => 'team_members_cat',
+                                    'field'    => 'slug',
+                                    'terms' => 'STAFF'
+                                ),
+                            ),
+                        );
+
+                        
+                        $loop = new WP_Query( $args );
+                        ?>
+                        <?php while ( $loop->have_posts() ) : $loop->the_post(); $acf_fields = get_field('additional_member_data_fields');?>
+                                
+                            <div class="our-team-item">
+                                
+                                    <figure>
+                                    <a href="<? echo get_post_permalink(); ?>#team-card" class="outer-link"></a>
+                                    <?php the_post_thumbnail('full'); ?> 
+                                        <div class="team-member-overlay">
+                                            <a href="<? echo get_post_permalink(); ?>#team-card" class="read-more-team">read more</a>
+                                        </div>
+                                    
+                                    </figure>
+                                
+                                    <p class="our-team-item-descr">
+                                        <span class="our-team-name"><? the_title(); ?></span>
+                                        <span class="our-team-occup"><?php echo trim ($acf_fields['member_medical_profession']);?></span>
+                                    </p>
+                                
+                            </div>
+
+                        <?php endwhile; ?>
+                            
                     </div>
                     <?php wp_reset_query(); ?>
                 </div>
