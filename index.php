@@ -183,33 +183,24 @@ get_header(); ?>
                                 ),
                             ),
                         );
-
-                        
                         $loop = new WP_Query( $args );
                         ?>
-                        <?php while ( $loop->have_posts() ) : $loop->the_post(); $acf_fields = get_field('additional_member_data_fields');?>
-                                
+                        <?php while ( $loop->have_posts() ) : $loop->the_post(); $acf_fields = get_field('additional_member_data_fields');?>            
                             <div class="our-team-item">
-                                
                                     <figure>
                                     <a href="<? echo get_post_permalink(); ?>#team-card" class="outer-link"></a>
                                     <?php the_post_thumbnail('full'); ?> 
                                         <div class="team-member-overlay">
                                             <a href="<? echo get_post_permalink(); ?>#team-card" class="read-more-team">read more</a>
                                         </div>
-                                    
                                     </figure>
                                 
                                     <p class="our-team-item-descr">
                                         <span class="our-team-name"><? the_title(); ?></span>
                                         <span class="our-team-occup"><?php echo trim ($acf_fields['member_medical_profession']);?></span>
                                     </p>
-                                
                             </div>
-
-                        <?php endwhile; ?>
-                            
-                            
+                        <?php endwhile; ?>    
                     </div>
                     <div class="item hided">
                     <?php
