@@ -154,7 +154,7 @@ get_header(); ?>
     
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-3 col-sm-3 col-xs-3">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h2 class="welcome-to-title our-team-title">
                     <?php the_field('our_team_section_title') ?>
                 </h2>

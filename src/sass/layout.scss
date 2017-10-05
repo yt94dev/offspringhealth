@@ -3272,6 +3272,31 @@ body.team_members-template-default{
                     background: #fbfbfb;
                     padding: 0px 0 275px 0;
                     overflow: hidden;
+
+                    .our-team-btns-wrapper{
+                        overflow: auto;
+                    
+                        .button-tab-team{
+                            font-family: 'Montserrat', sans-serif;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            color: #a7a7a8;
+                            width: 120px;
+                            height: 40px;
+                            border-radius: 20px;
+                            border: 2px solid #a7a7a8;
+                            text-align: center;
+                            padding: 9px;
+                            cursor: pointer;
+                            float: left;
+                            margin-left: 10px;
+                        }
+                
+                        .button-tab-team-active{
+                            background: #a7a7a8;
+                            color: #ffffff;
+                        }
+                    }
                 
         
                 .item {
