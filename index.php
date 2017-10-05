@@ -120,7 +120,7 @@ get_header(); ?>
 
                                 <div class="icon-container">
                                 <a href="<? echo get_post_permalink(); ?>#color-box" class="outer-link">
-                                    <figure>
+                                    < figure>
                                         <?php the_post_thumbnail('full'); ?> 
                                     </figure>
                                     <p class="icon-caption"><? the_title(); ?></p>
@@ -158,6 +158,10 @@ get_header(); ?>
                 <h2 class="welcome-to-title our-team-title">
                     <?php the_field('our_team_section_title') ?>
                 </h2>
+                <div class="our-team-btns-wrapper">
+                    <div class="button-tab-team button-tab-team-active">Practitioners</div>
+                    <div class="button-tab-team">Staff</div>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -199,6 +203,9 @@ get_header(); ?>
                         <?php endwhile; ?>
                             
                             
+                    </div>
+                    <div class="item hided">
+                        <h2>tab2</h2>
                     </div>
                     <?php wp_reset_query(); ?>
                 </div>

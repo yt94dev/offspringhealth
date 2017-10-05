@@ -416,7 +416,50 @@ if(jQuery(".what-we-do").length > 0)
         
     } );
     jQuery('.heard-from-list').prepend('<option selected="selected" disabled="disabled" value="">Please select</option>');
-        
+    
+    //
+    
+    jQuery('.button-tab-team').on(clickEvent, function(){
+        if(!jQuery(this).hasClass('button-tab-team-active')){
+            jQuery('.button-tab-team').removeClass('button-tab-team-active');
+            jQuery(this).addClass('button-tab-team-active');
+            var ind = jQuery('.our-team-btns-wrapper').children('.button-tab-team-active').index();
+            switch (ind) {
+                case 0:
+                    jQuery('.owl-carousel-home').children('.item').removeClass('invisible-tab hided hidedHeight show-faded-in');
+                    jQuery('.owl-carousel-home').children('.item').eq(0).addClass('show-faded-in');
+                    jQuery('.owl-carousel-home').children('.item').eq(1).addClass('invisible-tab');
+                    
+                    
+                    
+                    
+                    
+                    break;
+                
+                case 1:
+                    jQuery('.owl-carousel-home').children('.item').removeClass('invisible-tab hided hidedHeight show-faded-in');
+                    jQuery('.owl-carousel-home').children('.item').eq(1).addClass('show-faded-in');
+                    jQuery('.owl-carousel-home').children('.item').eq(0).addClass('invisible-tab');
+                    
+                    
+                    
+                    break;
+            
+                default:
+                    break;
+            }
+
+
+        }
+    });
+
+
+    // button-tab-team
+
+    // button-tab-team-active
+            
+    
+    
 
     // hamburger menu
     jQuery('.hamburger-open').on(clickEvent, function () {
