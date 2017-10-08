@@ -2,7 +2,9 @@
 add_theme_support( 'post-thumbnails' );
 
 
-    
+
+
+
  
 function my_pre_get_posts($query) {
     
@@ -297,8 +299,6 @@ function add_commonjs_script() {
 add_action( 'init', 'register_commonjs_script' );
 add_action('wp_enqueue_scripts', 'add_commonjs_script');
 // -----------------------------  END   ----------- add common.js scripts
-
-
 
 
 

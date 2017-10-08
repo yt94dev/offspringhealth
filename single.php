@@ -1,5 +1,26 @@
 <?php get_header(); ?>
 
+<!-- Facebook SDK start -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1569747979758777',
+      xfbml      : true,
+      version    : 'v2.10'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Facebook SDK end -->
+
 <?php get_template_part( 'index-top-section' ); ?>
 <?php while ( have_posts() ) : the_post(); $acf_fields = get_field('post_data_fields'); ?>
 <section class="post-section <?php
@@ -48,7 +69,11 @@ if ($posttags) {
                         <div class="date-share">
                             <span><?php  echo get_the_date("F j, Y");?></span>
                             <span class="icons-social-share-top">
-                                <a href="<?php echo get_permalink($post->ID); ?>" data-image="<?php echo trim($acf_fields['top_image_article']);?>" data-title="<?php the_title(); ?>" data-desc="<?php echo get_the_excerpt(); ?>" class="fa fa-facebook fbBtnShare" aria-hidden="true"></a>
+                            
+                                <span class="fa fa-facebook shareBtn" style="cursor:pointer;" aria-hidden="true"></span>
+
+
+
                                 <?php if( get_field('pdf_file') ): ?>
 
                                     <a href="<?php the_field('pdf_file');?>" class="fa fa-file-pdf-o" aria-hidden="true"></a>
@@ -65,7 +90,7 @@ if ($posttags) {
                         <div class="date-share">
                             <span><?php  echo get_the_date("F j, Y");?></span>
                             <span class="icons-social-share-top">
-                                <a href="<?php echo get_permalink($post->ID); ?>" data-image="<?php echo trim($acf_fields['top_image_article']);?>" data-title="<?php the_title(); ?>" data-desc="<?php echo get_the_excerpt(); ?>" class="fa fa-facebook fbBtnShare" aria-hidden="true"></a>
+                            <span class="fa fa-facebook shareBtn" style="cursor:pointer;" aria-hidden="true"></span>
                                 <?php if( get_field('pdf_file') ): ?>
 
                                     <a href="<?php the_field('pdf_file');?>" class="fa fa-file-pdf-o" aria-hidden="true"></a>
@@ -87,6 +112,28 @@ if ($posttags) {
             <?php  endwhile;  wp_reset_query();  ?>
         </div>  
     </div>
+<!-- Facebook share button handler start -->
+<script>
+document.querySelector('.shareBtn').onclick = function() {
+   
+    FB.ui({
+        method: 'share_open_graph',
+        action_type: 'og.likes',
+        action_properties: JSON.stringify({
+            object : {
+            'og:url': '<?php echo esc_url( get_permalink( ) ); ?>', // your url to share
+            'og:title': 'Offspringhealth.<?php the_title(); ?>',
+            'og:description': '<?php global $post; echo get_the_excerpt($post->ID);?>',
+            'og:image': '<?php the_post_thumbnail_url( 'full' ); ?>',
+            
+            }
+        })
+    }, function(response){});
+ 
+    
+}
+</script>
+<!-- Facebook share button handler end -->
 </section>
 
 <?php get_template_part( 'appointment-contact' ); ?>

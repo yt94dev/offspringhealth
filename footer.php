@@ -11,9 +11,18 @@
 
 <!-- Your regular body -->
 
+
 <?php wp_footer(); ?>
 
-</body>
 
-    
+
+</body>
 </html>
+
+
+
+
+
+
+
+

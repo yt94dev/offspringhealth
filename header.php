@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <title><?php bloginfo('name')?></title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php bloginfo('template_url')?>/css/style.css">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <?php if ( is_singular( 'post' )  ) : ?>
+        <meta property="og:url"           content="<?php echo esc_url( get_permalink( ) ); ?>" />
+        <meta property="og:type"          content="OFFSPRINGHEALTH.COM.AU" />
+        <meta property="og:title"         content="Offspringhealth.<?php the_title(); ?>" />
+        <meta property="og:description"   content="<?php global $post; echo get_the_excerpt($post->ID);?>" />
+        <meta property="og:image"         content="<?php the_post_thumbnail_url( 'full' ); ?> />
+    <?php endif; ?>
+
+
+
+
+
+
+
+   
+
+    <!-- loftloader styles -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="icon" href="<?php bloginfo('template_url')?>/favicons/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_url')?>/favicons/favicon.ico" />
+    <link rel="stylesheet" href="<?php bloginfo('template_url')?>/css/style.css" type="text/css" media="screen">
+    <link rel="icon" href="<?php bloginfo('template_url')?>/favicons/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo('template_url')?>/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="<?php bloginfo('template_url')?>/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('template_url')?>/favicons/apple-icon-72x72.png">
@@ -21,11 +42,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_url')?>/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="<?php bloginfo('template_url')?>/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_url')?>/favicons/favicon-16x16.png">
-    <link rel="manifest" href="<?php bloginfo('template_url')?>/favicons/manifest.json">
-    
-    <meta name="msapplication-TileColor" content="#ffffff">
+    <link rel="manifest" href="<?php bloginfo('template_url')?>/favicons/manifest.json"></noscript>
     <meta name="msapplication-TileImage" content="<?php bloginfo('template_url')?>/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

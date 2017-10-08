@@ -49,23 +49,9 @@ jQuery(document).ready(function () {
 
 
 
-// Facebook SDK
-// jQuery.ajaxSetup({ cache: true });
-// jQuery.getScript('//connect.facebook.net/en_US/sdk.js', function(){
-//   FB.init({
-//     appId: '{your-app-id}',
-//     version: 'v2.7' // or v2.1, v2.2, v2.3, ...
-//   });     
-//   jQuery('#loginbutton,#feedbutton').removeAttr('disabled');
-//   FB.getLoginStatus(updateStatusCallback);
-// });
+      
 
-// jQuery('.fbBtnShare').click(function(){
-//     elem = jQuery(this);
-//     postToFeed(elem.data('title'), elem.data('desc'), elem.prop('href'), elem.data('image'));
 
-//     return false;
-// });
 
 // Smooth scroll to anchor
 // jQuery('a[href^="#"]').click(function(){
