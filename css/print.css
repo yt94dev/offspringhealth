@@ -1,0 +1,60 @@
+@media print {
+  header {
+    display: none; }
+  .index-top-section {
+    text-align: center;
+    background-color: #cdc9c9;
+    font-size: 28px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    -webkit-print-color-adjust: exact; }
+  .index-top-section .welcome-text-btn {
+    display: none; }
+  .post-section .particle-container-post-1 {
+    display: none; }
+  .post-section .particle-container-post-2 {
+    display: none; }
+  .post-section .particle-container-post-3 {
+    display: none; }
+  .post-section .particle-container-post-4 {
+    display: none; }
+  .post-section .particle-container-post-5 {
+    display: none; }
+  .post-section .particle-container-post-6 {
+    display: none; }
+  .post-section .particle-container-post-7 {
+    display: none; }
+  .post-section .particle-container-post-8 {
+    display: none; }
+  .post-section .particle-container-post-9 {
+    display: none; }
+  .post-section .post-section-title {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 40px; }
+  .post-section .post-thumbnail-top {
+    text-align: center; }
+  .post-section .post-thumbnail-top img {
+    display: inline-block; }
+  .post-section .ffs-icon-container {
+    display: none !important; }
+  .appointments {
+    display: none; }
+  .contact-us {
+    display: none; }
+  footer {
+    text-align: center;
+    background-color: #cdc9c9;
+    font-size: 13px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    height: 40px;
+    width: 100%;
+    display: block;
+    -webkit-print-color-adjust: exact; }
+  footer .faq-page-link {
+    display: none; } }
+
+/*# sourceMappingURL=print.css.map */

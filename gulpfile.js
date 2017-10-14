@@ -34,6 +34,22 @@ var gulp = require('gulp'),
 
       console.log("sass compilation complete");
     }),
+    "sass-compile-print-styles" : (function () {
+      return gulp.src('src/sass/print.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(autoprefixer({
+          browsers: ['last 50 versions'],
+          cascade: true
+        }))
+        .pipe(sourcemaps.init())
+        .pipe(sass())
+        .pipe(sourcemaps.write('./'))
+        .pipe(rename('print.css'))
+        .pipe(gulp.dest('css/'));
+
+      console.log("print styles compilation complete");
+    }),
     "autoprefixize" : (function () {
       gulp.src('src/css/style.css')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
@@ -64,8 +80,8 @@ var gulp = require('gulp'),
   });
 
   gulp.task('watch', function() {
-    gulp.watch('src/sass/*.scss', ['js-min', 'sass-compile', 'autoprefixize', 'sass-source-map']);
+    gulp.watch('src/sass/*.scss', ['js-min', 'sass-compile', 'autoprefixize', 'sass-source-map', 'sass-minify', 'sass-compile-print-styles']);
     gulp.watch('src/js/*.js', ['js-min']);
   });
 
-  gulps.registerSeries("default", ["js-min", "sass-compile",  "autoprefixize", "sass-source-map", ]);
+  gulps.registerSeries("default", ["js-min", "sass-compile",  "autoprefixize", "sass-source-map", "sass-minify", "sass-compile-print-styles" ]);

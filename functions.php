@@ -4,8 +4,6 @@ add_theme_support( 'post-thumbnails' );
 
 
 
-
- 
 function my_pre_get_posts($query) {
     
         if( is_admin()) return;

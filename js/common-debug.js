@@ -20,13 +20,22 @@ jQuery.fn.extend({
 // Print button
 jQuery('.fa-print').on('click', function(){
     
-    if ( jQuery( "#print-section .post-thumbnail-top" ).length ) {
+
+    window.print();
+
+    // if ( jQuery( "#print-section .post-thumbnail-top" ).length ) {
         
-        jQuery('#print-section img, .post-section-title, .text-wrapper').printThis();
+    //     jQuery('#print-section img, .post-section-title, .text-wrapper').printThis();
         
-    }else{
-        jQuery('.post-section-title, .text-wrapper').printThis();
-    }
+    // }else{
+    //     jQuery('.post-section-title, .text-wrapper').printThis({
+    //         debug: true,
+    //         importCSS: true,
+    //         importStyle: true,
+    //         copyTagClasses: true,
+    //         importStyle: true,
+    //     });
+    // }
     
 });
 
